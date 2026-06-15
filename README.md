@@ -1,9 +1,5 @@
 # 🌐 3D Awwwards-Level Developer Portfolio Template
 
-<a href="https://awwwards-portfolio-template.vercel.app/" target="_blank">
-  <img src="./public/images/thumbnail.png" alt="Portfolio Thumbnail" />
-</a>
-
 ### Built with React, GSAP, Three.js, TailwindCSS & Framer Motion
 
 This is a fully animated, interactive, 3D developer portfolio template designed to **impress clients, recruiters, and hiring managers**. It's more than a portfolio—it's a web experience built with production-level code, scroll-based animations, and real-world best practices.

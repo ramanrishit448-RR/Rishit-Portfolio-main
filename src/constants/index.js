@@ -69,9 +69,9 @@ export const projects = [
     id: 1,
     name: "Meet.AI — AI-Powered Video Conferencing Platform",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "Engineered a custom AI Agent builder where users define their own bot (role, behavior, instructions), and the moment a call starts, that exact agent joins as a live voice participant — not a chatbox, not a sidebar tool, but a real presence in the room via OpenAI Realtime API ",
     href: "https://github.com/ramanrishit448-RR/next15-meet-ai-main",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    image: "/assets/projects/mobile-accessories-store.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
@@ -85,9 +85,9 @@ export const projects = [
     id: 2,
     name: "Resonance — Open-Source Text-to-Speech SaaS ",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "Built a self-hostable, open-source zero-shot voice cloning SaaS (ElevenLabs alternative) on Next.js and React 19 supporting 20 voices across 12 categories and 5 locales.",
     href: "https://github.com/ramanrishit448-RR/resonance-main",
-    image: "/assets/projects/plant-shop.jpg",
+    image: "/assets/projects/plant-shop.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "React" },
@@ -100,9 +100,9 @@ export const projects = [
     id: 3,
     name: "VectorDB — Custom Vector Database Engine",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "Built a private AI that reads and answers from your own documents — no cloud, no API calls, runs entirely locally — powered by a C++17 vector database implementing HNSW, (O(log N), KD-Tree, and Brute Force with 3 distance metrics, replicating Pinecone internals from scratch.",
     href: "https://github.com/ramanrishit448-RR/Your-OWN-AI-main",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/apple-tech-store.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
       { id: 1, name: "Blazor" },
@@ -117,7 +117,7 @@ export const projects = [
     description:
       "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
     href: "https://food-score-hub.vercel.app/",
-    image: "/assets/projects/electronics-store.jpg",
+    image: "/assets/projects/electronics-store.png",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
       { id: 1, name: "Vue.js" },
@@ -130,9 +130,9 @@ export const projects = [
     id: 5,
     name: "Kids Lab Workshop Landing Page - GEMA ",
     description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
+      "A modern, responsive landing page for the AI & Robotics Summer Workshop, built as an assessment project for GEMA Education Technology Private Limited.",
     href: "https://kid-lab-workshop-main.vercel.app/",
-    image: "/assets/projects/home-decor-store.jpg",
+    image: "/assets/projects/home-decor-store.png",
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
       { id: 1, name: "Angular" },
@@ -144,10 +144,10 @@ export const projects = [
 ];
 export const socials = [
   { name: "MEETING", href: "https://cal.com" },
-  { name: "Twitter", href: "https://twitter.com" },
-  { name: "LinkedIn", href: "https://linkedin.com" },
+  { name: "Instagram", href: "https://www.instagram.com/rishitraman1304/" },
+  { name: "LinkedIn", href: "www.linkedin.com/in/rishit-raman" },
   {
     name: "GitHub",
-    href: "https://github.com/elijah-farrell/Awwwards-Portfolio",
+    href: "https://github.com/ramanrishit448-RR",
   },
 ];

@@ -67,10 +67,10 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Meet AI",
+    name: "Meet.AI — AI-Powered Video Conferencing Platform",
     description:
       "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
-    href: "https://github.com/elijah-farrell/mobile-accessories-store",
+    href: "https://github.com/ramanrishit448-RR/next15-meet-ai-main",
     image: "/assets/projects/mobile-accessories-store.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
@@ -83,10 +83,10 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Resonance — Open-Source Text-to-Speech SaaS ",
     description:
       "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
-    href: "https://github.com/elijah-farrell/plant-shop",
+    href: "https://github.com/ramanrishit448-RR/resonance-main",
     image: "/assets/projects/plant-shop.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
@@ -98,10 +98,10 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "VectorDB — Custom Vector Database Engine",
     description:
       "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "https://github.com/elijah-farrell/apple-tech-marketplace",
+    href: "https://github.com/ramanrishit448-RR/Your-OWN-AI-main",
     image: "/assets/projects/apple-tech-store.jpg",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
@@ -113,10 +113,10 @@ export const projects = [
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "FoodScore Hub — AI-Powered Food Health Analyzer",
     description:
       "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "https://github.com/elijah-farrell/electronics-gadgets-store",
+    href: "https://food-score-hub.vercel.app/",
     image: "/assets/projects/electronics-store.jpg",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
@@ -128,10 +128,10 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Home Decor Marketplace",
+    name: "Kids Lab Workshop Landing Page - GEMA ",
     description:
       "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
+    href: "https://kid-lab-workshop-main.vercel.app/",
     image: "/assets/projects/home-decor-store.jpg",
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
@@ -139,21 +139,6 @@ export const projects = [
       { id: 2, name: "Firebase" },
       { id: 3, name: "GraphQL" },
       { id: 4, name: "Material UI" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Digital Game Store",
-    description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
     ],
   },
 ];

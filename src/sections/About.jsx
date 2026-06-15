@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const About = () => {
-  const text = `Software Engineering student passionate about
+  const text = `BTech IT student passionate about
     building scalable backend systems and AI-powered
     applications from ground-up.`;
   const aboutText = `Hi I am Rishit Raman 

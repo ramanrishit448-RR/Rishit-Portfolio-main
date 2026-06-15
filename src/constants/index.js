@@ -60,7 +60,6 @@ export const servicesData = [
       { title: "Cloudflare R2" },
       { title: "Postman" },
       { title: "Jest" },
-      { title: "npm" },
     ],
   },
 ];

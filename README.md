@@ -62,8 +62,3 @@ npm run dev
 ---
 ---
 
-## 📣 About This Template
-
-This is a modern, 3D animated portfolio template perfect for developers, designers, and creatives who want to showcase their work in an impressive way.
-Based on [Ali-Sanati's awwwards portfolio](https://github.com/Ali-Sanati/awwwards-portfolio).
----

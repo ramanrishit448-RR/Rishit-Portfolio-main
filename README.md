@@ -39,7 +39,7 @@ This is a fully animated, interactive, 3D developer portfolio template designed 
 ## 📦 Setup & Installation
 
 ```bash
-git clone https://github.com/elijah-farrell/Awwwards-Portfolio.git
+git clone https://github.com/ramanrishit448-RR/Rishit-Portfolio-main.git
 cd Awwwards-Portfolio
 npm install
 npm run dev

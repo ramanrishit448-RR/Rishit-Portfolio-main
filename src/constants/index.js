@@ -67,10 +67,10 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Meet AI",
     description:
       "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
-    href: "",
+    href: "https://github.com/elijah-farrell/mobile-accessories-store",
     image: "/assets/projects/mobile-accessories-store.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
@@ -86,7 +86,7 @@ export const projects = [
     name: "Plant Shop E-commerce",
     description:
       "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
-    href: "",
+    href: "https://github.com/elijah-farrell/plant-shop",
     image: "/assets/projects/plant-shop.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
@@ -101,7 +101,7 @@ export const projects = [
     name: "Apple Tech Marketplace",
     description:
       "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "",
+    href: "https://github.com/elijah-farrell/apple-tech-marketplace",
     image: "/assets/projects/apple-tech-store.jpg",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
@@ -116,7 +116,7 @@ export const projects = [
     name: "Electronics & Gadgets Store",
     description:
       "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
+    href: "https://github.com/elijah-farrell/electronics-gadgets-store",
     image: "/assets/projects/electronics-store.jpg",
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [

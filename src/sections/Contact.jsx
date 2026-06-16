@@ -4,6 +4,8 @@ import Marquee from "../components/Marquee";
 import { socials } from "../constants";
 import gsap from "gsap";
 import { Icon } from "@iconify/react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const text = `Got a question, how or project Idea?
@@ -15,6 +17,62 @@ const Contact = () => {
     "Let's Chat",
     "Get In Touch",
   ];
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState({ type: "", text: "" });
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("BlPszstrVbm6lhR9y"); // Replace with your public key
+  }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatusMessage({ type: "", text: "" });
+
+    try {
+      const templateParams = {
+        to_email: "ramanrishit448@gmail.com", // Your email
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      };
+
+      const response = await emailjs.send(
+        "service_lbodbfj", // Replace with your service ID
+        "template_xqiut59", // Replace with your template ID
+        templateParams,
+      );
+
+      if (response.status === 200) {
+        setStatusMessage({
+          type: "success",
+          text: "Message sent successfully! I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+        // Clear success message after 5 seconds
+        setTimeout(() => setStatusMessage({ type: "", text: "" }), 5000);
+      }
+    } catch (error) {
+      console.error("Email send failed:", error);
+      setStatusMessage({
+        type: "error",
+        text: "Failed to send message. Please try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
   const getSocialIcon = (socialName) => {
     const iconMap = {
       Instagram: "mdi:instagram",
@@ -92,6 +150,88 @@ const Contact = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Get In Touch Form Section */}
+        <div className="flex px-1 sm:px-1 md:px-3 lg:px-6 mt-20 mb-20">
+          <div className="w-full max-w-2xl">
+            {/* Heading */}
+            <div className="mb-16">
+              <h3 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+                Get In Touch
+              </h3>
+              <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed">
+                Interested in collaborating, internships, or software
+                development opportunities? Feel free to reach out.
+              </p>
+            </div>
+
+            {/* Contact Form */}
+            <form onSubmit={handleSubmit} className="space-y-8">
+              {/* Name Input */}
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  className="w-full bg-transparent border-b border-white/20 py-4 px-0 text-white text-lg placeholder-white/40 focus:outline-none focus:border-white/60 transition-colors duration-300 font-light"
+                  required
+                />
+              </div>
+
+              {/* Email Input */}
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="w-full bg-transparent border-b border-white/20 py-4 px-0 text-white text-lg placeholder-white/40 focus:outline-none focus:border-white/60 transition-colors duration-300 font-light"
+                  required
+                />
+              </div>
+
+              {/* Message Textarea */}
+              <div>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows="6"
+                  className="w-full bg-transparent border-b border-white/20 py-4 px-0 text-white text-lg placeholder-white/40 focus:outline-none focus:border-white/60 transition-colors duration-300 resize-none font-light"
+                  required
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <div className="pt-8">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="px-10 py-4 text-sm font-light uppercase tracking-widest text-white border border-white/30 rounded-lg hover:border-white/80 hover:bg-white/5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                </button>
+              </div>
+
+              {/* Status Message */}
+              {statusMessage.text && (
+                <div
+                  className={`pt-4 text-sm font-light ${
+                    statusMessage.type === "success"
+                      ? "text-green-400"
+                      : "text-red-400"
+                  }`}
+                >
+                  {statusMessage.text}
+                </div>
+              )}
+            </form>
           </div>
         </div>
       </div>
